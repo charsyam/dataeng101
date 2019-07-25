@@ -1,0 +1,11 @@
+To run kafka
+
+cd kafka_2.12-2.2.0
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties
+
+To run logstash
+
+cd logstash-7.2.0
+bin/logstash -f ../logstash/logstash.conf
